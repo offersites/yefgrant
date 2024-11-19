@@ -349,13 +349,38 @@ button:hover {
     background-color: rgb(215, 59, 27);
     color: #ffffff;
 }
-<style> 
-input[type=text] {
+<style>
+input[type=text], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
 }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ffff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffff;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #ffff;
+  padding: 20px;
+}
+
 	 /* Style the textarea */
         textarea {
             width: 90%;
@@ -398,21 +423,18 @@ input[type=text] {
      <p><font color="white">COMPLETE THE FORM BELOW TO GET GRANT</p>
                  <br/>
                 </p>
-          
+          <center><input type="text" id="fname" name="firstname" placeholder="Your name..">
                  <select style="width: auto;">
 		<option>-----SELECT GENDER-----</option><br/>
 
                    <option value="Airtel">MALE</option><br/>
              <option value="mtn">FEMALE</option><br/>
   
-               
-              
+              <center><input type="text" id="fname" name="firstname" placeholder="Your name.."> 
+              <center><input type="text" id="fname" name="firstname" placeholder="Your name..">
                
                 
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="fname"><br/>
-  <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lname"><br/>
+  
 
                 
               <select style="width: auto;">
